@@ -29,13 +29,13 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return countries.count
+        return CountryList().countries.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Country", for: indexPath)
         
-        cell.textLabel?.text = countries[indexPath.row].name.common
+        cell.textLabel?.text = CountryList().countries[indexPath.row]
         return cell
     }
     

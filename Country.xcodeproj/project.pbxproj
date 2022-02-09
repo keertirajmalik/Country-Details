@@ -15,6 +15,7 @@
 		33C5541027B3AB220004061F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C5540F27B3AB220004061F /* Assets.xcassets */; };
 		33C5541327B3AB220004061F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C5541127B3AB220004061F /* LaunchScreen.storyboard */; };
 		33C5541B27B3D3970004061F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C5541A27B3D3970004061F /* Country.swift */; };
+		33E74CA827B41DC600E73A06 /* CountryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E74CA727B41DC600E73A06 /* CountryList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		33C5541227B3AB220004061F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33C5541427B3AB220004061F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33C5541A27B3D3970004061F /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		33E74CA727B41DC600E73A06 /* CountryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		33C5540527B3AB190004061F /* Country */ = {
 			isa = PBXGroup;
 			children = (
+				33E74CA727B41DC600E73A06 /* CountryList.swift */,
 				33C5540627B3AB190004061F /* AppDelegate.swift */,
 				33C5540827B3AB190004061F /* SceneDelegate.swift */,
 				33C5540A27B3AB190004061F /* ViewController.swift */,
@@ -146,6 +149,7 @@
 			files = (
 				33C5541B27B3D3970004061F /* Country.swift in Sources */,
 				33C5540B27B3AB190004061F /* ViewController.swift in Sources */,
+				33E74CA827B41DC600E73A06 /* CountryList.swift in Sources */,
 				33C5540727B3AB190004061F /* AppDelegate.swift in Sources */,
 				3387FF6727B3EDBA0049EC6C /* CountryViewController.swift in Sources */,
 				33C5540927B3AB190004061F /* SceneDelegate.swift in Sources */,

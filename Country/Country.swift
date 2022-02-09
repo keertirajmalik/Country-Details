@@ -47,8 +47,8 @@ struct Pen: Codable {
 
 // MARK: - Flags
 struct Flags: Codable {
-    let png: String
-    let svg: String
+    let png: URL
+    let svg: URL
 }
 
 // MARK: - Languages

@@ -57,6 +57,7 @@ extension ViewController {
         do {
             let jsonCountry = try decoder.decode([Country].self, from: json)
             countries = jsonCountry
+            countries.sort(by: { $0.name.common < $1.name.common })
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

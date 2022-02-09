@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3387FF6727B3EDBA0049EC6C /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3387FF6627B3EDBA0049EC6C /* CountryViewController.swift */; };
 		33C5540727B3AB190004061F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C5540627B3AB190004061F /* AppDelegate.swift */; };
 		33C5540927B3AB190004061F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C5540827B3AB190004061F /* SceneDelegate.swift */; };
 		33C5540B27B3AB190004061F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C5540A27B3AB190004061F /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3387FF6627B3EDBA0049EC6C /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		33C5540327B3AB190004061F /* Country.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Country.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C5540627B3AB190004061F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33C5540827B3AB190004061F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				33C5540827B3AB190004061F /* SceneDelegate.swift */,
 				33C5540A27B3AB190004061F /* ViewController.swift */,
 				33C5540C27B3AB190004061F /* Main.storyboard */,
+				3387FF6627B3EDBA0049EC6C /* CountryViewController.swift */,
 				33C5541A27B3D3970004061F /* Country.swift */,
 				33C5540F27B3AB220004061F /* Assets.xcassets */,
 				33C5541127B3AB220004061F /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 				33C5541B27B3D3970004061F /* Country.swift in Sources */,
 				33C5540B27B3AB190004061F /* ViewController.swift in Sources */,
 				33C5540727B3AB190004061F /* AppDelegate.swift in Sources */,
+				3387FF6727B3EDBA0049EC6C /* CountryViewController.swift in Sources */,
 				33C5540927B3AB190004061F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

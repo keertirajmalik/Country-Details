@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
-
+    
     var countries = [Country]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,7 @@ class ViewController: UITableViewController {
         let urlString: String
         
         urlString = "https://restcountries.com/v3.1/all"
-
+        
         DispatchQueue.global(qos: .userInitiated).async {
             if let url = URL(string: urlString) {
                 if let data = try? Data(contentsOf: url) {
@@ -35,9 +35,17 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Country", for: indexPath)
         
-        let country = countries[indexPath.row]
-        cell.textLabel?.text = country.name.common
+        cell.textLabel?.text = countries[indexPath.row].name.common
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "CountryDetails") as? CountryViewController {
+            
+            vc.countryFlag = countries[indexPath.row].flags.png
+            
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 
@@ -50,10 +58,10 @@ extension ViewController {
     
     func parse(json: Data) {
         let decoder = JSONDecoder()
-//        if let jsonCountry = try? decoder.decode([Country].self, from: json) {
-//            countries = jsonCountry
-//            print(countries)
-//        }
+        //        if let jsonCountry = try? decoder.decode([Country].self, from: json) {
+        //            countries = jsonCountry
+        //            print(countries)
+        //        }
         do {
             let jsonCountry = try decoder.decode([Country].self, from: json)
             countries = jsonCountry

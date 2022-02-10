@@ -9,6 +9,7 @@ import UIKit
 
 class CountryViewController: UIViewController {
     
+//    TODO: Add support to more informations
     var country = [Country]()
     var countryName: String?
     var countryNameLabel: UILabel!

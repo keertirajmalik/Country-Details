@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,37 +45,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyc-ye-6hq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1413" y="-100"/>
-        </scene>
-        <!--Country View Controller-->
-        <scene sceneID="KwW-Fh-5RR">
-            <objects>
-                <viewController storyboardIdentifier="CountryDetails" id="NHa-hu-mAR" customClass="CountryViewController" customModule="Country" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ARk-2u-s2N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2nd-l4-8HL">
-                                <rect key="frame" x="57" y="104" width="300" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Afp-tS-fIU"/>
-                                    <constraint firstAttribute="width" constant="300" id="dGj-F5-XzH"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="aNE-4j-pfG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="2nd-l4-8HL" firstAttribute="centerX" secondItem="aNE-4j-pfG" secondAttribute="centerX" id="3FH-7c-lQQ"/>
-                            <constraint firstItem="2nd-l4-8HL" firstAttribute="top" secondItem="aNE-4j-pfG" secondAttribute="top" constant="60" id="O0M-ua-QQ2"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="countryFlagView" destination="2nd-l4-8HL" id="CBr-D9-YrL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="szA-A2-rQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2242.0289855072465" y="-100.44642857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iu2-SA-aWo">

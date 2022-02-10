@@ -27,12 +27,10 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "CountryDetails") as? CountryViewController {
-            
-            vc.countryName = CountryList().countries[indexPath.row]
-            
-            navigationController?.pushViewController(vc, animated: true)
-        }
+        let vc = CountryViewController()
+        
+        vc.countryName = CountryList().countries[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

@@ -10,10 +10,10 @@ import Foundation
 // MARK: - Country
 struct Country: Codable {
     let name: Name
-//    let currencies: Currencies
-//    let capital: [String]
+    var currencies: [String: [String: String]]? = ["": ["name": "Currency not found"]]
+    var capital: [String]? = ["Capital city not found"]
 //    let region, subregion: String
-//    let languages: Languages
+    var languages: [String: String]? = ["": "Languages not found"]
     let maps: Maps
     let population: Int
 //    let fifa: String //TODO: Try to make this optional
@@ -35,25 +35,10 @@ struct Car: Codable {
     let side: String
 }
 
-// MARK: - Currencies
-struct Currencies: Codable {
-    let pen: Pen
-}
-
-// MARK: - Pen
-struct Pen: Codable {
-    let name, symbol: String
-}
-
 // MARK: - Flags
 struct Flags: Codable {
     let png: URL
     let svg: URL
-}
-
-// MARK: - Languages
-struct Languages {
-    let aym, que, spa: String
 }
 
 // MARK: - Maps
